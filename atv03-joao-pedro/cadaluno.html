@@ -10,90 +10,70 @@
 
 <header>
     <div class="header-content">
-        <img src="imagens/logo-placeholder.png" alt="Logo" class="logo-left">
+        <img src="imagens/waite-logo.png" alt="Logo" class="logo-left">
         <h1>Cadastro de Alunos</h1>
-        <img src="imagens/user-placeholder.png" alt="Usuário" class="logo-right">
+        <img src="imagens/usuario-site.jpg" alt="Usuário" class="logo-right">
     </div>
 </header>
 
+<nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="cadaluno.html">Cadastrar Aluno</a>
+    <a href="listaluno.html">Lista de Alunos</a>
+</nav>
+
 <main>
-    <form action="listaluno.html" method="post" class="form-container">
-        <h2>Preencha os dados do aluno:</h2>
+    <div class="form-container">
+        <form action="listaluno.html" method="post">
+            <h2>Preencha os dados do aluno:</h2>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
 
-        <!-- Campos do formulário -->
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required>
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
 
-        <label for="data-nascimento">Data de Nascimento:</label>
-        <input type="date" id="data-nascimento" name="data-nascimento" required>
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="brasil">Brasil</option>
+                <option value="argentina">Argentina</option>
+                <option value="eua">Estados Unidos</option>
+                <option value="portugal">Portugal</option>
+                <option value="japao">Japão</option>
+            </select>
 
-        <label for="pais">País:</label>
-        <select id="pais" name="pais" required>
-            <option value="brasil">Brasil</option>
-            <option value="argentina">Argentina</option>
-            <option value="eua">Estados Unidos</option>
-            <option value="portugal">Portugal</option>
-            <option value="japao">Japão</option>
-            <!-- Adicione mais países aqui -->
-        </select>
-
-        <label for="estado">Estado:</label>
-        <select id="estado" name="estado" required>
-            <optgroup label="Brasil">
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
                 <option value="sp">São Paulo</option>
                 <option value="rj">Rio de Janeiro</option>
                 <option value="mg">Minas Gerais</option>
                 <option value="ba">Bahia</option>
-                <!-- Adicione mais estados brasileiros aqui -->
-            </optgroup>
-            <optgroup label="Estados Unidos">
-                <option value="ca">Califórnia</option>
-                <option value="ny">Nova York</option>
-                <option value="fl">Flórida</option>
-                <!-- Adicione mais estados dos EUA aqui -->
-            </optgroup>
-            <!-- Adicione optgroups para outros países -->
-        </select>
+            </select>
 
-        <label for="municipio">Município:</label>
-        <select id="municipio" name="municipio" required>
-            <option value="municipio1">São Paulo - SP</option>
-            <option value="municipio2">Rio de Janeiro - RJ</option>
-            <option value="municipio3">Belo Horizonte - MG</option>
-            <option value="municipio4">Salvador - BA</option>
-            <!-- Adicione mais municípios aqui -->
-        </select>
+            <label for="disciplina">Disciplina Favorita:</label>
+            <select id="disciplina" name="disciplina" required>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+                <option value="ciencias">Ciências</option>
+            </select>
 
-        <label for="disciplina">Disciplina Favorita:</label>
-        <select id="disciplina" name="disciplina" required>
-            <option value="matematica">Matemática</option>
-            <option value="portugues">Português</option>
-            <option value="ciencias">Ciências</option>
-            <option value="historia">História</option>
-            <option value="geografia">Geografia</option>
-        </select>
-
-        <label for="satisfacao">Nível de Satisfação:</label>
-        <input type="range" id="satisfacao" name="satisfacao" min="1" max="5">
-
-        <!-- Botões -->
-        <div class="form-buttons">
-            <input type="submit" value="Cadastrar">
-            <input type="reset" value="Limpar">
-        </div>
-    </form>
+            <div class="form-buttons">
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
 </main>
 
 <footer>
     <div class="footer-content">
         <p>&copy; 2024 João Pedro Bastos - Todos os direitos reservados.</p>
-        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+        <img src="imagens/image.png" alt="Logo IF" class="footer-logo">
     </div>
 </footer>
 
